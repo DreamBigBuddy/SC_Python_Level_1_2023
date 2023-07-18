@@ -43,3 +43,20 @@ for i in range(1, max_num+1):
         multiples.append(i)
 
 print("Here are your multiples: {0}".format(multiples))
+
+# Guess the Number
+
+num = 9
+
+guess = int(input("Enter a number: "))
+
+while num != guess:
+    if num > guess:
+        print("Too High!")
+
+    elif num < guess:
+        print("Too Low!")
+
+    guess = int(input("Enter a number: "))
+
+print("Correct!")
